@@ -1,0 +1,10 @@
+@font-face {
+    font-family: AvenirNext;
+    src: url("fonts/Avenir Next Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: AvenirNext;
+    font-weight: bold;
+    src: url("fonts/Avenir Next Bold.otf") format("opentype");
+}
