@@ -66,17 +66,17 @@ ul a, ul a:hover {
 }
 
 /*.text-hero {
-    font-family: 'Avenir Next', sans-serif;
-    font-size: 60px;
-    line-height: 70px;
-    letter-spacing: -1.74px;
-    font-weight: bold;
-    color: $text-color-light;
-    position:absolute;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    top:50%;
-    left: 35.5%; 
-    transform: translateX(-50%) translateY(-50%);
+font-family: 'Avenir Next', sans-serif;
+font-size: 60px;
+line-height: 70px;
+letter-spacing: -1.74px;
+font-weight: bold;
+color: $text-color-light;
+position:absolute;
+text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+top:50%;
+left: 35.5%; 
+transform: translateX(-50%) translateY(-50%);
 }*/
 
 .custom-padding {
@@ -153,18 +153,38 @@ textarea {
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.12);
 }
 
+.box-custom {
+    width:27%;
+    border: none;
+    background-color:#E12943;
+    font-weight: 900;
+    font-size: 20px;
+    color: $clr-white;
+}
+.box-custom-2 {
+    width: 100%;
+    background-color:#E12943;
+    color: $clr-white;
+    line-height: 20px;
+}
+.box-custom-3 {
+    width:60%;
+    background-color: $bg-violet;
+    margin-top: -5%;
+    margin-left: 27%;
+}
 .custom-margin {
     margin-top: -3.5rem;
 }
 /*.hero-img {
-    background: url(img/hero-img.png);
-    background-position: inherit;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: cover;
-    min-height: 620px;
-    border-radius: 0px;
-    position: relative;
+background: url(img/hero-img.png);
+background-position: inherit;
+height: 100%;
+background-repeat: no-repeat;
+background-position: cover;
+min-height: 620px;
+border-radius: 0px;
+position: relative;
 }*/
 
 .btn.btn-primary,
@@ -230,6 +250,9 @@ textarea {
         padding-left: 5.2rem!important;
         padding-right: 5.2rem!important;
     }
+    .padding-3 {
+        padding-left: 2rem!important;
+    }
 }
 
 @media (max-width: 576px) {
@@ -238,6 +261,12 @@ textarea {
         padding-left: 4.5rem!important;
         padding-right: 4.5rem!important;
     }
-}
+        .padding-3 {
+            padding-left: 0.75rem!important;
+        }
+        ul a, ul a:hover {
+            font-size: 1.25rem!important;
+        }
+    }
 
 
