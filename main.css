@@ -49,6 +49,14 @@ ul a, ul a:hover {
   font-size: 14px;
   color: #9384AA; }
 
+.text-hero {
+  font-family: 'Avenir Next', sans-serif;
+  font-size: 60px;
+  line-height: 70px;
+  letter-spacing: -1.74px;
+  font-weight: bold;
+  color: #F9F8F5; }
+
 .text-violet {
   color: #9384AA; }
 
@@ -99,6 +107,54 @@ textarea {
   padding-right: 0px;
   padding-left: 15px; }
 
+.card-custom {
+  border-radius: 0px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.12);
+  border: none; }
+
+.card-header-custom {
+  width: 80%;
+  border: none;
+  background-color: #AAA1CB;
+  color: #F9F8F5;
+  font-weight: 900;
+  font-size: 20px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.12); }
+
+.jumbotron {
+  background: url(img/hero-img.png);
+  background-position: inherit;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: cover;
+  min-height: 620px;
+  border-radius: 0px; }
+
+.btn.btn-primary,
+.btn.btn-primary:hover,
+.btn.btn-primary:active,
+.btn.btn-primary:visited,
+.btn.btn-primary:focus {
+  background-color: #E12943;
+  border-color: #E12943;
+  border-radius: 0px;
+  color: text-color-light;
+  font-size: 20px;
+  font-weight: 900; }
+
+.btn.btn-light,
+.btn.btn-light:hover,
+.btn.btn-light:active,
+.btn.btn-light:visited,
+.btn.btn-light:focus {
+  background-color: #fff;
+  border-color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+  border-radius: 0px;
+  color: #E12943;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4); }
+
 ::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: #4A4A4A; }
@@ -123,8 +179,9 @@ textarea {
   /* Most modern browsers support this now. */
   color: #4A4A4A; }
 
-@media (max-width: 576px) {
-  .pl-5, .padding-0 {
-    padding-left: 15px !important; } }
+@media (max-width: 768px) {
+  .padding-0 {
+    padding-left: 15px !important;
+    padding-right: 15px !important; } }
 
 /*# sourceMappingURL=main.css.map */

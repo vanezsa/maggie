@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="46px" viewBox="0 0 40 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-chevron-right</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-8.4%" y="-7.3%" width="116.9%" height="114.5%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.120301178 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="maggie-home-05" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1152.000000, -1236.000000)">
+        <g id="Book-Widget" filter="url(#filter-1)" transform="translate(937.000000, 971.000000)" fill="#E12943">
+            <polygon id="icon-chevron-right" points="231.2855 278 229 280.2855 236.5095 287.795 229 295.3045 231.2855 297.59 241.0805 287.795"></polygon>
+        </g>
+    </g>
+</svg>

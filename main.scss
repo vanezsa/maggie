@@ -6,6 +6,9 @@ $primary-color: #4A4A4A;
 $clr-red: #E12943;
 $clr-violet: #9384AA;
 $clr-white: #fff;
+$bg-violet: #AAA1CB;
+$text-color-light: #F9F8F5;
+
 body {
     background-color: $bg-color;
     font-family: $font-stack;
@@ -62,6 +65,15 @@ ul a, ul a:hover {
     color: $clr-violet;
 }
 
+.text-hero {
+    font-family: 'Avenir Next', sans-serif;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -1.74px;
+    font-weight: bold;
+    color: $text-color-light;
+}
+
 .text-violet {color: $clr-violet;}
 .text-bold {font-weight: 700;}
 
@@ -116,6 +128,58 @@ textarea {
     padding-left: 15px;
 }
 
+.card-custom {
+    border-radius: 0px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.12);
+    border: none;
+}
+
+.card-header-custom {
+    width: 80%;
+    border: none;
+    background-color: $bg-violet;
+    color: $text-color-light;
+    font-weight: 900;
+    font-size: 20px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.12);
+}
+
+.jumbotron {
+    background: url(img/hero-img.png);
+    background-position: inherit;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: cover;
+    min-height: 620px;
+    border-radius: 0px;
+}
+
+.btn.btn-primary,
+.btn.btn-primary:hover,
+.btn.btn-primary:active,
+.btn.btn-primary:visited,
+.btn.btn-primary:focus {
+    background-color: $clr-red;
+    border-color: $clr-red;
+    border-radius: 0px;
+    color: text-color-light;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.btn.btn-light,
+.btn.btn-light:hover,
+.btn.btn-light:active,
+.btn.btn-light:visited,
+.btn.btn-light:focus {
+    background-color: $clr-white;
+    border-color: $clr-white;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 0px;
+    color:$clr-red;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
+}
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color: $primary-color;
 }
@@ -137,9 +201,10 @@ textarea {
 }
 
 // Small devices (landscape phones, less than 768px)
-@media (max-width: 576px) { 
-    .pl-5, .padding-0  {
+@media (max-width: 768px) { 
+ .padding-0  {
         padding-left: 15px!important;
+        padding-right: 15px!important;
     }
 }
 
