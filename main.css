@@ -49,19 +49,23 @@ ul a, ul a:hover {
   font-size: 14px;
   color: #9384AA; }
 
-/*.text-hero {
-font-family: 'Avenir Next', sans-serif;
-font-size: 60px;
-line-height: 70px;
-letter-spacing: -1.74px;
-font-weight: bold;
-color: $text-color-light;
-position:absolute;
-text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-top:50%;
-left: 35.5%; 
-transform: translateX(-50%) translateY(-50%);
-}*/
+.overlay {
+  position: relative;
+  width: 100%;
+  z-index: 0; }
+
+.caption {
+  font-family: 'Avenir Next', sans-serif;
+  font-size: 60px;
+  line-height: 70px;
+  letter-spacing: -1.74px;
+  font-weight: bold;
+  color: #F9F8F5;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
+
 .custom-padding {
   padding-top: 17%;
   padding-left: 5%; }
@@ -72,11 +76,21 @@ transform: translateX(-50%) translateY(-50%);
 .text-bold {
   font-weight: 700; }
 
+.text-bold-white a {
+  font-weight: 700;
+  color: #fff; }
+
 input {
   width: 100%;
   border: 1px solid #9E9E9E;
   height: 45px;
   padding-left: 16px; }
+
+.tabs {
+  position: relative;
+  width: 100%;
+  height: 82px;
+  min-height: 62px; }
 
 textarea {
   width: 100%;
@@ -106,15 +120,16 @@ textarea {
   font-weight: 900;
   font-size: 15px; }
 
-.padding-0 {
-  padding: 0px; }
-
 .padding-1 {
   padding: 0px; }
 
 .padding-2 {
   padding-right: 0px;
   padding-left: 15px; }
+
+.custom-padding {
+  padding-left: 6rem;
+  padding-top: 18rem; }
 
 .card-custom {
   border-radius: 0px;
@@ -131,12 +146,14 @@ textarea {
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.12); }
 
 .box-custom {
-  width: 27%;
+  width: 37%;
   border: none;
   background-color: #E12943;
   font-weight: 900;
   font-size: 20px;
-  color: #fff; }
+  color: #fff;
+  position: absolute;
+  bottom: 0px; }
 
 .box-custom-2 {
   width: 100%;
@@ -145,24 +162,17 @@ textarea {
   line-height: 20px; }
 
 .box-custom-3 {
-  width: 60%;
+  width: 53%;
   background-color: #AAA1CB;
   margin-top: -5%;
-  margin-left: 27%; }
+  left: 37%;
+  bottom: 0px;
+  position: absolute; }
 
 .custom-margin {
-  margin-top: -3.5rem; }
+  margin-top: -3.5rem;
+  z-index: 999; }
 
-/*.hero-img {
-background: url(img/hero-img.png);
-background-position: inherit;
-height: 100%;
-background-repeat: no-repeat;
-background-position: cover;
-min-height: 620px;
-border-radius: 0px;
-position: relative;
-}*/
 .btn.btn-primary,
 .btn.btn-primary:hover,
 .btn.btn-primary:active,
@@ -212,10 +222,26 @@ position: relative;
   /* Most modern browsers support this now. */
   color: #4A4A4A; }
 
-@media (max-width: 992px) {
+@media (max-width: 1199px) {
+  .custom-padding {
+    padding-left: 4.5rem;
+    padding-top: 15rem; } }
+@media (max-width: 991px) {
   .custom-margin {
-    margin-top: -1.8rem; } }
-@media (max-width: 768px) {
+    margin-top: -1.8rem; }
+
+  .caption {
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: -1px; }
+
+  .custom-padding {
+    padding-left: 3.5rem;
+    padding-top: 11rem; }
+
+  .padding-0 {
+    padding: 0px; } }
+@media (max-width: 767px) {
   .padding-0 {
     padding-left: 15px !important;
     padding-right: 15px !important; }
@@ -226,7 +252,16 @@ position: relative;
     padding-right: 5.2rem !important; }
 
   .padding-3 {
-    padding-left: 2rem !important; } }
+    padding-left: 2rem !important; }
+
+  .caption {
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: -0.5px; }
+
+  .custom-padding {
+    padding-left: 3rem;
+    padding-top: 9rem; } }
 @media (max-width: 576px) {
   .padding-2 {
     padding-top: 1rem !important;
@@ -238,5 +273,17 @@ position: relative;
 
   ul a, ul a:hover {
     font-size: 1.25rem !important; } }
+@media (max-width: 450px) {
+  .custom-padding {
+    padding-left: 2rem;
+    padding-top: 8rem; }
+
+  .caption {
+    font-size: 20px;
+    line-height: 25px; } }
+@media (max-width: 320px) {
+  .custom-padding {
+    padding-left: 1rem;
+    padding-top: 6rem; } }
 
 /*# sourceMappingURL=main.css.map */
